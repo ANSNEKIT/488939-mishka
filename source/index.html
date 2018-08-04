@@ -6,7 +6,171 @@
   </head>
   <body>
 
+    <header class="page-header">
+      <a href="#" class="page-header__link">
+        <img src="img/" alt="Логотип Mishka" class="page-header__image-logo">
+      </a>
+      <nav class="main-nav">
+        <button type="button" class="main-nav__toogle">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item site-list__item"><a href="#">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="main-nav__item user-list__item">
+              <a href="#">
+                <span class="main-nav__icon user-list__icon user-list__icon--search"></span>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item user-list__item">
+              <a href="#">
+                <span class="main-nav__icon user-list__icon user-list__icon--basket"></span>
+                Корзина пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+      <main class="page-main">
+        <h1 class="slogan__title">Miska - детство навсегда!</h1>
 
+        <section class="category">
+          <header class="category__header banner">
+            <h2 class="category__title banner__title">Милые штуки ручной
+              работы для дома</h2>
+          </header>
+          <table class="stats-list">
+            <tr>
+              <td class="stats-list__text">Предметы интерьера</td>
+              <td class="stats-list__icon stats-list__icon--interior"></td>
+            </tr>
+            <tr>
+              <td class="stats-list__text">Детские игрушки</td>
+              <td class="stats-list__icon stats-list__icon--toys"></td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="features">
+          <h2 class="features__title">
+            Вязаные корзинки<br>
+            <span class="features__popular-title">Товар недели</span>
+          </h2>
+          <p class="features__text">Экологически чистая пряжа, ручная работа.
+            Доступны в шести расцветках, и трех размерах.
+          </p>
+          <table class="features__table table-elem">
+            <tr>
+              <td class="table-elem__key">Цвет:</td>
+              <td class="table-elem__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="table-elem__key">Диаметр:</td>
+              <td class="table-elem__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="table-elem__key">Высота:</td>
+              <td class="table-elem__value">15 см</td>
+            </tr>
+          </table>
+          <a href="#" class="features__link">
+            <img src="img/" alt="Пряжа" class="features__image">
+            <p class="features__price">Цена 990 руб.</p>
+          </a>
+          <a href="#" class="features__to-order button">Заказать</a>
+        </section>
+        <section class="about">
+          <h2 class="about__title">Коротко о нас:</h2>
+          <div class="about__wrapper">
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Экологически
+                чистые материалы</p>
+            </div>
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Скандинавский стиль
+                по российской цене</p>
+            </div>
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Увеличивает лайки
+                на фотографиях</p>
+            </div>
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Связано вручную с
+                любовью и умилением</p>
+            </div>
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Поддержка отечественного производителя</p>
+            </div>
+            <div class="about__elements">
+              <p class="about__icon"></p>
+              <p class="about__text">Поставляется в
+                подарочной упаковке</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__title">Отзывы</h2>
+          <blockquote class="contacts__item">
+            <p class="contacts__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <cite class="contacts__author-name">Анастасия Красильникова</cite>
+            <span class="contacts__nickname">@misssssiskras</span>
+          </blockquote>
+          <button type="button" class="contacts__prev">Предыдущий отзыв</button>
+          <button type="button" class="contacts__next">Следующий отзыв</button>
+          <a href="#" class="contacts__to-send button">Написать</a>
+        </section>
+
+        <section class="about">
+          <h2 class="about__title">Контакты</h2>
+          <table class="about__table table-elem">
+            <tr>
+              <td class="table-elem__key">e-mail:</td>
+              <td class="table-elem__value">nfo@mimimishkashop.ru</td>
+            </tr>
+            <tr>
+              <td class="table-elem__key">адрес:</td>
+              <td class="table-elem__value">г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </table>
+
+          <!-- Здесь будет карта -->
+
+          <a href="#" class="about__to-send button">Напишите нам</a>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link social__link--instagram">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link social__link--twitter">Мы в Твиттере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="https://htmlacademy.ru" class="button copyright__link">HTML Academy</a>
+        </div>
+      </footer>
   </body>
 </html>
