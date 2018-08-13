@@ -1,0 +1,21 @@
+body {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "button.scss";
+
+@import "page-header.scss";
+@import "page-main.scss";
+@import "category.scss";
+@import "banner.scss";
+@import "features.scss";
+@import "table-elem.scss";
+@import "about.scss";
+@import "contacts.scss";
+@import "map.scss";
+@import "page-footer.scss";
+
