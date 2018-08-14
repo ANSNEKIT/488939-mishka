@@ -1,0 +1,27 @@
+.table-elem {
+  width: 100%;
+
+  @include fontParams(15px, 20px);
+  color: $color-text-light;
+  border-collapse: collapse;
+}
+
+.table-elem tr {
+
+}
+
+.table-elem__key {
+  width: 38%;
+  vertical-align: top;
+  &--contacts {
+    width: 30%;
+  }
+}
+
+.table-elem__value {
+  width: 62%;
+  vertical-align: top;
+  &--contacts {
+    width: 70%;
+  }
+}

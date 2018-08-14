@@ -1,23 +1,40 @@
-body {
-  font-size: $fontSize;
-  line-height: $lineHeight;
-}
 
 @import "fonts.scss";
 @import "mixins.scss";
 @import "variables.scss";
 @import "button.scss";
 
+body {
+  font-family: "OpenSans", "Arial", "Tahoma", sans-serif;
+  @include fontParams();
+  width: 320px;
+}
+
+.visually-hidden {
+  @include visuallyHidden();
+  background-color: #ffffff;
+}
+
+.page-wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+
 @import "page-header.scss";
 @import "page-main.scss";
+@import "main-nav.scss";
 @import "site-list.scss";
 @import "user-list.scss";
 @import "category.scss";
 @import "banner.scss";
+@import "stats-list.scss";
 @import "features.scss";
 @import "table-elem.scss";
 @import "about.scss";
 @import "contacts.scss";
 @import "map.scss";
 @import "page-footer.scss";
+@import "social.scss";
+
 

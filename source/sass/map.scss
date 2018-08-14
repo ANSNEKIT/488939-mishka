@@ -1,0 +1,14 @@
+.map {
+
+}
+
+.map__wrapper {
+  @include centerMob;
+}
+
+.map__title {
+  @include fontParams(18px, 30px, 700);
+  color: $black;
+}
+
+

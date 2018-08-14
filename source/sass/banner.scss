@@ -1,0 +1,9 @@
+.banner {
+  background-color: $bg-grey;
+}
+
+.banner__title {
+  @include fontParams(27px, 30px, 700);
+  color: #000000;
+  text-align: center;
+}

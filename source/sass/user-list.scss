@@ -1,0 +1,27 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-list__item {
+  text-align: center;
+  @include fontParams(17px, 24px, 700);
+  border-top: 1px solid $bd-light;
+  &:last-child {
+    border-bottom: 1px solid $bd-light;
+  }
+}
+
+.user-list__link {
+  display: block;
+  padding: 27px 0;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.user-list__icon {
+
+}

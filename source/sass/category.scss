@@ -1,0 +1,25 @@
+.category {
+
+}
+
+.category__wrapper {
+  @include centerMob;
+}
+
+.category__header {
+  width: 100%;
+  height: 357px;
+
+  background-repeat: no-repeat;
+  background-position: -128px -15px;
+  background-image: url("../img/hero-mobile@1x.jpg");
+}
+
+.category__title {
+  margin: 0;
+  padding-top: 70px;
+}
+
+.category__stats {
+  margin-top: -70px;
+}

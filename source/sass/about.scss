@@ -1,0 +1,53 @@
+.about {
+
+}
+
+.about__wrapper {
+  @include centerMob;
+}
+
+.about__title {
+  @include fontParams(25px, 30px, 700);
+  color: $black;
+}
+
+.about__text {
+  @include fontParams(17px, 20px, 700);
+  color: $black;
+}
+
+.about__icon {
+  width: 35px;
+  height: 38px;
+  /*background-color: $green-color;*/
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  &--flower {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money {
+    width: 47px;
+    height: 28px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--heart {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--ball {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rocket {
+    width: 55px;
+    height: 24px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}

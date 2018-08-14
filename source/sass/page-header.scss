@@ -1,4 +1,14 @@
 .page-header {
-  color: red;
-  background-color: yellow;
+
+  position: relative;
+
+  &__link {
+    display: block;
+    text-align: center;
+
+  }
+}
+
+.page-header__wrapper {
+  @include centerMob;
 }
