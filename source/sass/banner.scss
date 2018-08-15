@@ -1,5 +1,10 @@
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   background-color: $bg-grey;
+  min-height: 177px;
 }
 
 .banner__title {
