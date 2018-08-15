@@ -6,22 +6,42 @@
   border-collapse: collapse;
 }
 
-.table-elem tr {
-
+.table-elem__row {
+  border-bottom: 1px solid $bd-light;
 }
 
 .table-elem__key {
   width: 38%;
+  padding: 10px 0;
+
   vertical-align: top;
+
   &--contacts {
     width: 30%;
+  }
+
+  &--contacts-adress {
+    padding-top: 33px;
+    padding-bottom: 35px;
   }
 }
 
 .table-elem__value {
   width: 62%;
+  padding: 10px 0;
+
   vertical-align: top;
+
   &--contacts {
     width: 70%;
+  }
+
+  &--contacts-mail {
+    border-bottom: 1px solid $green-color;
+  }
+
+  &--contacts-adress {
+    padding-top: 33px;
+    padding-bottom: 35px;
   }
 }
