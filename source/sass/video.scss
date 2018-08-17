@@ -1,0 +1,93 @@
+.video {
+  margin-bottom: 58px;
+}
+
+.video__wrapper {
+  @include centerMob;
+}
+
+.video__header {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid $bd-light;
+}
+
+.video__title {
+  margin: 0;
+  padding: 23px;
+  padding-left: 90px;
+
+  @include fontParams(17px, 24px, 700);
+  color: $black;
+}
+
+.video__icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("../img/icon-video.svg");
+}
+
+.video__container {
+  position: relative;
+  width: 260px;
+  height: 150px;
+}
+
+.video__image {
+
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 0;
+
+  width: 101px;
+  height: 77px;
+
+  margin-left: -50px;
+  margin-top: -38px;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("../img/icon-play.svg");
+
+  cursor: pointer;
+}
+
+.video__description {
+  border: 1px solid $bd-light;
+}
+
+.video__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-left: 33px;
+  margin-bottom: 28px;
+
+  @include fontParams(13px, 24px, 400);
+  color: $color-text-light;
+}
+
+.video__to-send {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+
