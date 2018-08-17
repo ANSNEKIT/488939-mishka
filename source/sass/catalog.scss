@@ -38,9 +38,9 @@
   text-decoration: none;
 }
 
-.catalog__title {
+.catalog__title-cart {
   margin: 0;
-  padding: 22px 28px 0;
+  padding: 28px;
 
   @include fontParams(17px, 24px, 700);
   color: $black;
