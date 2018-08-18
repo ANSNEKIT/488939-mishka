@@ -1,8 +1,8 @@
 
-@import "fonts.scss";
-@import "mixins.scss";
-@import "variables.scss";
-@import "button.scss";
+@import "blocks/fonts.scss";
+@import "blocks/mixins.scss";
+@import "blocks/variables.scss";
+@import "blocks/button.scss";
 
 body {
   font-family: "OpenSans", "Arial", "Tahoma", sans-serif;
@@ -22,33 +22,33 @@ body {
 }
 
 // Хедер
-@import "page-header.scss";
+@import "blocks/page-header.scss";
 
 // Стили для главной страницы
-@import "page-main.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "user-list.scss";
-@import "category.scss";
-@import "banner.scss";
-@import "stats-list.scss";
-@import "features.scss";
-@import "table-elem.scss";
-@import "about.scss";
-@import "contacts.scss";
-@import "map.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/category.scss";
+@import "blocks/banner.scss";
+@import "blocks/stats-list.scss";
+@import "blocks/features.scss";
+@import "blocks/table-elem.scss";
+@import "blocks/about.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
 
 // Стили страницы каталога
-@import "catalog.scss";
-@import "video.scss";
+@import "blocks/catalog.scss";
+@import "blocks/video.scss";
 
 // Страница с формой
-@import "banner-block.scss";
-@import "form-feedback.scss";
-@import "form.scss";
+@import "blocks/banner-block.scss";
+@import "blocks/form-feedback.scss";
+@import "blocks/form.scss";
 
 // футер
-@import "page-footer.scss";
-@import "social.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 
 
