@@ -1,0 +1,51 @@
+.user-list {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-list__item {
+  position: relative;
+
+
+  @include fontParams(17px, 24px, 700);
+  border-top: 1px solid $bd-light;
+  &:last-child {
+    border-bottom: 1px solid $bd-light;
+  }
+}
+
+.user-list__link {
+  display: block;
+  padding: 27px 30px;
+  padding-left: 75px;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.user-list__icon {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+
+  margin-top: -9px;
+
+  display: block;
+  width: 21px;
+  height: 19px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &--search {
+    background-image: url("../img/icon-search.svg");
+  }
+
+  &--basket {
+    background-image: url("../img/icon-cart.svg");
+  }
+}

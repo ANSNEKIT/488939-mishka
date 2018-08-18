@@ -1,0 +1,24 @@
+@mixin fontParams ($fontSize: 15px, $lineHeight: 30px, $fontWeight: 400) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin visuallyHidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin centerMob() {
+  width: 260px;
+  padding: 0 30px;
+}

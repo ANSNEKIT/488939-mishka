@@ -1,0 +1,17 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: $bg-grey;
+  min-height: 177px;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0;
+
+  @include fontParams(27px, 30px, 700);
+  color: #000000;
+  text-align: center;
+}

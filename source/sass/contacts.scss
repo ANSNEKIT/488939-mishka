@@ -1,0 +1,110 @@
+.contacts {
+  padding-bottom: 45px;
+
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-image: url("../img/zigzag-line.png");
+
+}
+
+.contacts__wrapper {
+  @include centerMob;
+}
+
+.contacts__title {
+  @include fontParams(25px, 30px, 700);
+  color: $black;
+}
+
+.contacts__item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+
+  color: $color-text-light;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.contacts__author-name {
+  font-style: normal;
+  @include fontParams(17px, 24px, 700);
+  color: $black;
+}
+
+.contacts__nickname {
+  @include fontParams(17px, 24px, 400);
+  color: $color-text-light;
+}
+
+.contacts__flex-container {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.contacts__prev {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+
+  width: 130px;
+  height: 50px;
+
+  font-size: 0;
+  border: 2px solid $bd-light;
+  border-right: none;
+  background-color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+
+    display: block;
+    width: 50px;
+    height: 30px;
+
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+}
+
+.contacts__next {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+
+  width: 130px;
+  height: 50px;
+
+  font-size: 0;
+  border: 2px solid $bd-light;
+  background-color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+
+    display: block;
+    width: 50px;
+    height: 30px;
+
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}

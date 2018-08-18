@@ -1,0 +1,47 @@
+.table-elem {
+  width: 100%;
+
+  @include fontParams(15px, 20px);
+  color: $color-text-light;
+  border-collapse: collapse;
+}
+
+.table-elem__row {
+  border-bottom: 1px solid $bd-light;
+}
+
+.table-elem__key {
+  width: 38%;
+  padding: 10px 0;
+
+  vertical-align: top;
+
+  &--contacts {
+    width: 38%;
+  }
+
+  &--contacts-adress {
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
+}
+
+.table-elem__value {
+  width: 62%;
+  padding: 10px 0;
+
+  vertical-align: top;
+
+  &--contacts {
+    // width: 70%;
+  }
+
+  &--contacts-mail {
+    border-bottom: 1px solid $green-color;
+  }
+
+  &--contacts-adress {
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
+}

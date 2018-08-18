@@ -1,0 +1,26 @@
+.main-nav {
+
+}
+
+.main-nav__toogle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("../img/icon-menu-close.svg");
+
+}
+
+.main-nav__wrapper {
+
+}

@@ -1,0 +1,38 @@
+.stats-list {
+  @include fontParams(19px, 24px, 700);
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+.stats-list__row {
+  background-color: $bg-green-lighten;
+  &--darken {
+    background-color: $bg-green-darken;
+  }
+}
+
+.stats-list__icon {
+  background-repeat: no-repeat;
+  &--interior {
+    background-image: url("../img/icon-interior.svg");
+    background-position: 240px center;
+  }
+  &--toys {
+    background-image: url("../img/icon-toy.svg");
+    background-position: 230px center;
+  }
+}
+
+.stats-list__link {
+  display: block;
+  padding: 27px 30px;
+  // padding-left: 30px;
+
+  text-decoration: none;
+  color: $white;
+}
+
+
+

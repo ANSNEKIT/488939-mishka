@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding: 14px 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  color: #444444;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+
+  &--video {
+    width: 188px;
+
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+}

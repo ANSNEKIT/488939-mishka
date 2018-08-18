@@ -1,0 +1,65 @@
+.features {
+  margin-top: 30px;
+
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-image: url("../img/zigzag-line.svg");
+
+}
+
+.features__wrapper {
+  @include centerMob;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+
+  @include fontParams(25px, 30px, 700);
+  color: #000000;
+}
+
+.features__popular-title {
+
+  @include fontParams(17px, 20px, 700);
+  color: $green-color;
+  text-transform: uppercase;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+
+  @include fontParams(15px, 24px, 400);
+  color: $color-text-light;
+}
+
+.features__table {
+  margin-bottom: 28px;
+
+  @include fontParams(15px, 24px, 400);
+  color: $color-text-light;
+}
+
+.features__link {
+  display: block;
+  margin-bottom: 23px;
+
+  text-decoration: none;
+}
+
+.features__price {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+
+  @include fontParams(17px, 24px, 700);
+  text-align: center;
+  color: $color-text-light;
+}
+
+.features__to-order {
+  margin-bottom: 40px;
+}

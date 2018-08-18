@@ -1,0 +1,23 @@
+.map {
+  margin-bottom: 40px;
+}
+
+.map__wrapper {
+  @include centerMob;
+}
+
+.map__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 25px;
+
+  @include fontParams(18px, 30px, 700);
+  color: $black;
+}
+
+.map__image {
+  margin-bottom: 40px;
+}
+
+
