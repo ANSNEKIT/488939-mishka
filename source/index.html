@@ -12,34 +12,39 @@
   <body>
 
     <header class="page-header">
-      <!-- <div class="page-header__wrapper"> -->
-        <a href="#" class="page-header__link">
-          <img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип Mishka" class="page-header__image-logo">
-        </a>
-        <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <nav class="page-header__nav main-nav">
+
+          <a href="#" class="page-header__link">
+            <img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип Mishka" class="page-header__logo-mob">
+            <img src="img/icon-logo-tablet.png" width="113" height="46" alt="Логотип Mishka" class="page-header__logo-tablet">
+          </a>
+
           <button type="button" class="main-nav__toogle">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Каталог товаров</a></li>
-              <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="main-nav__item user-list__item">
-                <a href="#" class="user-list__link">
-                  <span class="main-nav__icon user-list__icon user-list__icon--search"></span>
-                  Поиск по сайту
-                </a>
-              </li>
-              <li class="main-nav__item user-list__item">
-                <a href="#" class="user-list__link">
-                  <span class="main-nav__icon user-list__icon user-list__icon--basket"></span>
-                  Корзина: пока пуста
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="main-nav__list main-nav__list--site site-list">
+            <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Каталог товаров</a></li>
+            <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
+          </ul>
+
+          <ul class="main-nav__list main-nav__list--user user-list">
+            <li class="main-nav__item user-list__item user-list__item--search">
+              <a href="#" class="user-list__link user-list__link--search">
+                <span class="main-nav__icon user-list__icon user-list__icon--search"></span>
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="main-nav__item user-list__item">
+              <a href="#" class="user-list__link user-list__linlk--basket">
+                <span class="main-nav__icon user-list__icon user-list__icon--basket"></span>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+
         </nav>
-      <!-- </div> -->
+        <p class="page-header__slogan">Бесплатная доставка по России</p>
+      </div>
     </header>
 
     <main class="page-main">
@@ -53,30 +58,26 @@
               </h2>
             </div>
           </header>
-          <table class="category__stats stats-list">
-            <tr class="stats-list__row">
-              <td class="stats-list__ceil">
-                <a href="" class="stats-list__link">Предметы<br> интерьера</a>
-              </td>
-              <td class="stats-list__ceil">
-                <span class="stats-list__icon stats-list__icon--interior"></span>
-              </td>
-            </tr>
-            <tr class="stats-list__row stats-list__row--darken">
-              <td class="stats-list__ceil">
-                <a href="" class="stats-list__link">Детские<br> игрушки</a>
-              </td>
-              <td class="stats-list__ceil">
-                <span class="stats-list__icon stats-list__icon--toys"></span>
-              </td>
-            </tr>
-          </table>
+
+          <div class="category__stats stats-list">
+            <div class="stats-list__row">
+              <div class="stats-list__ceil stats-list__icon stats-list__icon--interior">
+                <a href="" class="stats-list__link">Предметы интерьера</a>
+              </div>
+            </div>
+
+            <div class="stats-list__row stats-list__row--darken">
+              <div class="stats-list__ceil stats-list__icon stats-list__icon--toys">
+                <a href="" class="stats-list__link">Детские игрушки</a>
+              </div>
+            </div>
+          </div>
       </section>
 
       <section class="features">
         <div class="features__wrapper">
           <h2 class="features__title">
-            Вязаные корзинки<br>
+            Вязаные корзинки
             <span class="features__popular-title">Товар недели</span>
           </h2>
           <p class="features__text">Экологически чистая пряжа, ручная работа.
