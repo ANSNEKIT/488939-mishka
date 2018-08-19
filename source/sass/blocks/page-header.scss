@@ -1,19 +1,79 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-
   background-color: $white;
   position: relative;
-
-  &__link {
-    padding: 20px 0;
-    display: block;
-
-    text-align: center;
-
-  }
 }
 
 .page-header__wrapper {
-  @include centerMob;
+
+}
+
+.page-header__link {
+  padding: 22px 0;
+  display: block;
+  // width: 320px;
+
+  text-align: center;
+}
+
+.page-header__logo-mob {
+
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__slogan {
+  display: none;
+}
+
+
+@media (min-width: $table-width) {
+  .page-header {
+    height: 90px;
+
+    border-bottom: 1px solid $bd-light;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 668px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+  }
+
+  .page-header__nav {
+    display: flex;
+    justify-content: spase-between;
+    flex-wrap: wrap;
+  }
+
+  .page-header__link {
+    width: 120px;
+    margin-right: auto;
+  }
+
+  .page-header__logo-mob {
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    display: block;
+  }
+
+  .page-header__slogan {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-top: -26px;
+
+    @include fontParams(15px, 24px, 400);
+    color: $color-text-light;
+  }
+
+
 }

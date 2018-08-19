@@ -1,5 +1,4 @@
 .site-list {
-
   padding: 0;
   margin: 0;
 
@@ -23,6 +22,33 @@
 }
 
 @media (min-width: $table-width) {
+  .site-list__item {
+    width: auto;
+    border: none;
+  }
 
+  .site-list__link {
+    padding: 0;
+    padding-top: 22px;
+    padding-right: 35px;
+  }
+
+  // .site-list {
+  //   width: 334px;
+
+  //   display: flex;
+  //   justify-content: flex-start;
+  //   order: 2;
+  // }
+
+  // .site-list__item {
+  //   width: 167px;
+  // }
+
+  // .site-list__link{
+  //   padding: 0;
+  //   padding-top: 20px;
+  //   // padding-right: 35px;
+  // }
 
 }

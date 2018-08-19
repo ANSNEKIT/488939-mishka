@@ -1,4 +1,6 @@
 .stats-list {
+  display: block;
+
   @include fontParams(19px, 24px, 700);
   color: #ffffff;
   width: 100%;
@@ -7,46 +9,78 @@
 }
 
 .stats-list__row {
+  display: block;
+
+  @include centerMob;
+
   background-color: $bg-green-lighten;
+
   &--darken {
     background-color: $bg-green-darken;
   }
 }
 
 .stats-list__ceil {
-  width: 50%;
+  display: block;
 }
 
 .stats-list__icon {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  padding-right: 30px;
-
   background-repeat: no-repeat;
+
   &--interior {
-    width: 41px;
-    height: 63px;
-
     background-image: url("../img/icon-interior.svg");
-    background-position: 0 50%;
+    background-position: 96% 50%;
   }
-  &--toys {
-    width: 60px;
-    height: 60px;
 
+  &--toys {
     background-image: url("../img/icon-toy.svg");
-    background-position: 0 50%;
+    background-position: 98% 50%;
   }
 }
 
 .stats-list__link {
   display: block;
-  padding: 27px 30px;
-  // padding-left: 30px;
+  padding: 27px 0;
+  padding-right: 90px;
 
   text-decoration: none;
   color: $white;
+}
+
+@media (min-width: $table-width) {
+  .stats-list {
+    display: flex;
+
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .stats-list__row {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+
+    width: 50%;
+  }
+
+  .stats-list__link {
+    padding: 35px;
+    padding-right: 130px;
+    padding-bottom: 30px;
+  }
+
+  .stats-list__icon {
+    &--interior {
+      background-position: 255px 50%;
+    }
+    &--toys {
+      background-position: 238px 50%;
+    }
+  }
+
+
 }
 
 

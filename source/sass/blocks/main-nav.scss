@@ -24,3 +24,34 @@
 .main-nav__wrapper {
 
 }
+
+@media (min-width: $table-width) {
+
+  .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav__list--site {
+    width: 100%;
+
+    display: flex;
+    //justify-content: flex-start;
+    align-content: flex-start;
+    order: 2;
+  }
+
+  .main-nav__list--user {
+    width: 347px;
+
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  // .main-nav__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  //   //flex-direction: row;
+  // }
+
+}

@@ -21,4 +21,11 @@
 @mixin centerMob() {
   width: auto;
   padding: 0 30px;
+  margin: 0 auto;
+}
+
+@mixin centerTablet() {
+  width: 668px;
+  padding: 0 50px;
+  margin: 0 auto;
 }

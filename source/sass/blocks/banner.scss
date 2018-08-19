@@ -13,6 +13,13 @@
 
 .banner__title {
   @include fontParams(27px, 30px, 700);
-  color: #000000;
+  color: $black;
   text-align: center;
+}
+
+@media (min-width: $table-width) {
+  .banner__title {
+    @include fontParams(43px, 50px, 700);
+  }
+
 }

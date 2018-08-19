@@ -21,6 +21,9 @@
 }
 
 .features__popular-title {
+  display: block;
+
+  margin-top: 5px;
 
   @include fontParams(17px, 20px, 700);
   color: $green-color;
