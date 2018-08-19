@@ -26,10 +26,10 @@
   &::before {
   position: absolute;
   top: 9px;
-  right: 0;
+  left: 60px;
 
   display: block;
-  width: 198px;
+  width: calc(100% - 60px);
   height: 1px;
 
   content: "";
@@ -235,5 +235,6 @@
 
 .form__submit {
   width: 100%;
+  cursor: pointer;
 }
 

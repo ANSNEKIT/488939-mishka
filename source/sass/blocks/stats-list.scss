@@ -13,15 +13,30 @@
   }
 }
 
+.stats-list__ceil {
+  width: 50%;
+}
+
 .stats-list__icon {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  padding-right: 30px;
+
   background-repeat: no-repeat;
   &--interior {
+    width: 41px;
+    height: 63px;
+
     background-image: url("../img/icon-interior.svg");
-    background-position: 240px center;
+    background-position: 0 50%;
   }
   &--toys {
+    width: 60px;
+    height: 60px;
+
     background-image: url("../img/icon-toy.svg");
-    background-position: 230px center;
+    background-position: 0 50%;
   }
 }
 

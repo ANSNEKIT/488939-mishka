@@ -1,7 +1,7 @@
 .contacts {
   padding-bottom: 45px;
 
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: 0 bottom;
   background-image: url("../img/zigzag-line.png");
 
@@ -47,6 +47,8 @@
 }
 
 .contacts__prev {
+  flex-grow: 1;
+
   position: relative;
 
   padding: 0;
@@ -79,6 +81,8 @@
 }
 
 .contacts__next {
+  flex-grow: 1;
+
   position: relative;
 
   padding: 0;

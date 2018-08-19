@@ -16,7 +16,14 @@
   color: $black;
 }
 
+.map__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .map__image {
+  text-align: center;
+
   margin-bottom: 40px;
 }
 

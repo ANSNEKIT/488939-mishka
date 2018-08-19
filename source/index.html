@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>HTML Academy: Мишка</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -44,7 +46,7 @@
       <h1 class="visually-hidden">Miska - детство навсегда!</h1>
 
       <section class="category">
-          <header class="category__header banner">
+          <header class="category__header banner banner--index">
             <div class="category__wrapper">
               <h2 class="category__title banner__title">
                 Милые штуки ручной работы для дома
@@ -53,13 +55,19 @@
           </header>
           <table class="category__stats stats-list">
             <tr class="stats-list__row">
-              <td class="stats-list__icon stats-list__icon--interior">
+              <td class="stats-list__ceil">
                 <a href="" class="stats-list__link">Предметы<br> интерьера</a>
+              </td>
+              <td class="stats-list__ceil">
+                <span class="stats-list__icon stats-list__icon--interior"></span>
               </td>
             </tr>
             <tr class="stats-list__row stats-list__row--darken">
-              <td class="stats-list__icon stats-list__icon--toys">
+              <td class="stats-list__ceil">
                 <a href="" class="stats-list__link">Детские<br> игрушки</a>
+              </td>
+              <td class="stats-list__ceil">
+                <span class="stats-list__icon stats-list__icon--toys"></span>
               </td>
             </tr>
           </table>
@@ -163,14 +171,15 @@
            <tr>
              <td class="table-elem__key table-elem__key--contacts table-elem__key--contacts-adress">адрес:</td>
              <td class="table-elem__value table-elem__value--contacts table-elem__value--contacts-adress">
-              г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101
+              г.Санкт-Петербург, ул.Большая Конюшенная,
+              д.19/8, офис 101
              </td>
            </tr>
          </table>
        </div>
-       <img src="../img/map-mobile@1x.jpg" alt="Наши координаты на карте" width="320" height="457" class="map__image">
+       <div class="map__image-wrapper">
+         <img src="../img/map-mobile@1x.jpg" alt="Наши координаты на карте" class="map__image">
+       </div>
        <div class="map__wrapper">
          <a href="#" class="about__to-send button">Напишите нам
          </a>

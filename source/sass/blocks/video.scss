@@ -1,13 +1,21 @@
 .video {
+
+
   margin-bottom: 58px;
 }
 
 .video__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include centerMob;
 }
 
 .video__header {
   position: relative;
+
+  width: 258px;
 
   margin: 0;
   padding: 0;
@@ -26,7 +34,7 @@
 
 .video__icon {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 30px;
 
   display: block;

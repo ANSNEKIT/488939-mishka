@@ -10,7 +10,6 @@
 .user-list__item {
   position: relative;
 
-
   @include fontParams(17px, 24px, 700);
   border-top: 1px solid $bd-light;
   &:last-child {

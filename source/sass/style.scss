@@ -1,25 +1,35 @@
 
 @import "blocks/fonts.scss";
-@import "blocks/mixins.scss";
 @import "blocks/variables.scss";
-@import "blocks/button.scss";
+@import "blocks/mixins.scss";
 
 body {
+  min-width: 320px;
+
   font-family: "OpenSans", "Arial", "Tahoma", sans-serif;
   @include fontParams();
-  width: 320px;
+  // width: 320px;
   color: $color-text-light;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
   @include visuallyHidden();
-  background-color: #ffffff;
+
 }
 
 .page-wrapper {
   width: 260px;
-  margin: 0 auto;
+  padding: 0 30px;
 }
+
+
+@import "blocks/button.scss";
 
 // Хедер
 @import "blocks/page-header.scss";
