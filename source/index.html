@@ -12,6 +12,7 @@
   <body>
 
     <header class="page-header">
+      <div class="page-header__container"></div>
       <div class="page-header__wrapper">
         <nav class="page-header__nav main-nav">
 
@@ -80,62 +81,83 @@
             Вязаные корзинки
             <span class="features__popular-title">Товар недели</span>
           </h2>
-          <p class="features__text">Экологически чистая пряжа, ручная работа.
-            Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="features__table table-elem">
-            <tr class="table-elem__row">
-              <td class="table-elem__key">Цвет:</td>
-              <td class="table-elem__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="table-elem__row">
-              <td class="table-elem__key">Диаметр:</td>
-              <td class="table-elem__value">25 см</td>
-            </tr>
-            <tr class="table-elem__row">
-              <td class="table-elem__key">Высота:</td>
-              <td class="table-elem__value">15 см</td>
-            </tr>
-          </table>
-          <a href="#" class="features__link">
-            <img src="../img/triple-set-mobile@1x.jpg" alt="Пряжа" class="features__image">
-          </a>
-          <p class="features__price">Цена 990 руб.</p>
-          <a href="#" class="features__to-order button">Заказать</a>
+
+         <div class="features__flex-container">
+
+            <div class="features__flex-item">
+              <p class="features__text">Экологически чистая пряжа, ручная работа.
+               Доступны в шести расцветках, и трех размерах.
+              </p>
+              <table class="features__table table-elem">
+                <tr class="table-elem__row">
+                  <td class="table-elem__key">Цвет:</td>
+                  <td class="table-elem__value">«Тиффани»/серый</td>
+                </tr>
+                <tr class="table-elem__row">
+                  <td class="table-elem__key">Диаметр:</td>
+                  <td class="table-elem__value">25 см</td>
+                </tr>
+                <tr class="table-elem__row">
+                  <td class="table-elem__key">Высота:</td>
+                  <td class="table-elem__value">15 см</td>
+                </tr>
+              </table>
+            </div>
+
+            <a href="#" class="features__link">
+              <img src="../img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Пряжа" class="features__image features__image--mob">
+              <img src="../img/triple-set-tablet.jpg" width="333" height="404" alt="Пряжа" class="features__image features__image--tablet">
+            </a>
+
+            <div class="features__flex-item-price">
+              <p class="features__price">Цена 990 руб.</p>
+              <a href="#" class="features__to-order button">Заказать</a>
+            </div>
+
+          </div>
         </div>
       </section>
 
       <section class="about">
         <div class="about__wrapper">
-        <h2 class="about__title">Коротко о нас:</h2>
-          <div class="about__elements">
-            <p class="about__icon about__icon--flower"></p>
-            <p class="about__text">Экологически
-              чистые материалы</p>
-          </div>
-          <div class="about__elements">
-            <p class="about__icon about__icon--money"></p>
-            <p class="about__text">Скандинавский стиль
-              по российской цене</p>
-          </div>
-          <div class="about__elements">
-            <p class="about__icon about__icon--heart"></p>
-            <p class="about__text">Увеличивает лайки
-              на фотографиях</p>
-          </div>
-          <div class="about__elements">
-            <p class="about__icon about__icon--ball"></p>
-            <p class="about__text">Связано вручную с
-              любовью и умилением</p>
-          </div>
-          <div class="about__elements">
-            <p class="about__icon about__icon--rocket"></p>
-            <p class="about__text">Поддержка отечественного производителя</p>
-          </div>
-          <div class="about__elements">
-            <p class="about__icon about__icon--gift"></p>
-            <p class="about__text">Поставляется в
-              подарочной упаковке</p>
+          <h2 class="about__title">Коротко о нас:</h2>
+
+          <div class="about__flex-container">
+            <div class="about__flex-item">
+              <div class="about__elements">
+                <p class="about__icon about__icon--flower"></p>
+                <p class="about__text">Экологически
+                  чистые материалы</p>
+              </div>
+              <div class="about__elements">
+                <p class="about__icon about__icon--money"></p>
+                <p class="about__text">Скандинавский стиль
+                  по российской цене</p>
+              </div>
+              <div class="about__elements">
+                <p class="about__icon about__icon--heart"></p>
+                <p class="about__text">Увеличивает лайки
+                  на фотографиях</p>
+              </div>
+            </div>
+
+            <div class="about__flex-item">
+              <div class="about__elements">
+                <p class="about__icon about__icon--ball"></p>
+                <p class="about__text">Связано вручную с
+                  любовью и умилением</p>
+              </div>
+              <div class="about__elements">
+                <p class="about__icon about__icon--rocket"></p>
+                <p class="about__text">Поддержка отечественного производителя</p>
+              </div>
+              <div class="about__elements">
+                <p class="about__icon about__icon--gift"></p>
+                <p class="about__text">Поставляется в
+                  подарочной упаковке</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -146,50 +168,62 @@
           <blockquote class="contacts__item">
             <p class="contacts__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </p>
-            <cite class="contacts__author-name">Анастасия Красильникова</cite>
-            <span class="contacts__nickname">@misssssiskras</span>
+            <div class="contacts__flex-container">
+              <div class="contacts__flex-item">
+                <cite class="contacts__author-name">Анастасия Красильникова</cite>
+                <span class="contacts__nickname">@misssssiskras</span>
+              </div>
+              <div class="contacts__flex-nav">
+                <button type="button" class="contacts__prev">Предыдущий отзыв</button>
+                <button type="button" class="contacts__next">Следующий отзыв</button>
+              </div>
+            </div>
           </blockquote>
-          <div class="contacts__flex-container">
-            <button type="button" class="contacts__prev">Предыдущий отзыв</button>
-            <button type="button" class="contacts__next">Следующий отзыв</button>
-          </div>
+
           <a href="#" class="contacts__to-send button">Написать</a>
         </div>
       </section>
 
       <section class="map">
-       <div class="map__wrapper">
-         <h2 class="map__title">Контакты</h2>
-         <table class="map__table table-elem">
-           <tr>
-              <td class="table-elem__key table-elem__key--contacts">
-              e-mail:
-              </td>
-              <td class="table-elem__value table-elem__value--contacts table-elem__value--contacts-mail">
-               info@mimimishkashop.ru
-              </td>
-           </tr>
-           <tr>
-             <td class="table-elem__key table-elem__key--contacts table-elem__key--contacts-adress">адрес:</td>
-             <td class="table-elem__value table-elem__value--contacts table-elem__value--contacts-adress">
+        <div class="map__wrapper">
+          <h2 class="map__title">Контакты</h2>
+          <div class="map__table">
+            <div class="map__flex-row map__flex-row--top">
+              <p class="map__elem-key">
+                e-mail:
+              </p>
+              <p class="map__elem-value map__elem-value--mail">
+                info@mimimishkashop.ru
+              </p>
+            </div>
+            <div class="map__flex-row">
+              <p class="map__elem-key">
+                адрес:
+              </p>
+              <p class="map__elem-value map__elem-value--adres">
               г.Санкт-Петербург, ул.Большая Конюшенная,
               д.19/8, офис 101
-             </td>
-           </tr>
-         </table>
-       </div>
+              </p>
+            </div>
+          </div>
+        </div>
        <div class="map__image-wrapper">
-         <img src="../img/map-mobile@1x.jpg" alt="Наши координаты на карте" class="map__image">
+          <img src="../img/map-mobile@1x.jpg" width="322" height="457" alt="Наши координаты на карте" class="map__image-mob">
+          <img src="../img/map-tablet@1x.jpg" width="768" height="457" alt="Наши координаты на карте" class="map__image-tablet">
        </div>
        <div class="map__wrapper">
-         <a href="#" class="about__to-send button">Напишите нам
-         </a>
+          <a href="#" class="map__to-send button">
+            Напишите нам
+          </a>
        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+        <p class="page-footer__logo">
+          <img src="../img/logo-mobile.svg" alt="Логотип Мишка" class="page-footer__image">
+        </p>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
