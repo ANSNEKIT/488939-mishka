@@ -6,9 +6,19 @@
   @include centerMob;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__image {
+
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
+
   padding: 22px 0;
 }
 
@@ -30,5 +40,30 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: url("../img/logo-htmlacademy.svg");
+}
+
+
+@media (min-width: $table-width) {
+  .page-footer {
+    padding: 33px 0;
+  }
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include centerTablet;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+
+    display: block;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+  }
 
 }

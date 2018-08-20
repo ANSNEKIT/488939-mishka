@@ -24,19 +24,30 @@
 }
 
 @media (min-width: $table-width) {
+  // .category {
+
+  //   margin-bottom: 40px;
+  // }
+
   .category__wrapper {
     @include centerTablet;
   }
 
   .category__header {
     height: 746px;
+    background-position: 50% -40px;
     background-image: url("../img/hero-desktop.jpg");
   }
 
   .category__title {
     // padding-left: 87px;
     // padding-right: 87px;
-    padding-top: 160px;
+    padding-top: 120px;
   }
+
+  // .category__stats {
+  //   margin-top: -110px;
+  // }
+
 
 }

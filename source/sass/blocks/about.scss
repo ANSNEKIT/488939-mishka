@@ -7,6 +7,11 @@
 }
 
 .about__title {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
   @include fontParams(25px, 30px, 700);
   color: $black;
 }
@@ -50,4 +55,42 @@
   &--gift {
     background-image: url("../img/icon-feature-gift.svg");
   }
+}
+
+@media (min-width: $table-width) {
+  .about {
+    margin-bottom: 60px;
+  }
+  .about__wrapper {
+    @include centerTablet;
+  }
+
+  .about__title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    @include fontParams(43px, 50px, 700);
+  }
+
+  .about__flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about__flex-item {
+    width: 334px;
+  }
+
+  .about__text {
+    @include fontParams(20px, 22px, 700);
+  }
+
+  .about__elements {
+    margin-bottom: 55px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 }

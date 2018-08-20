@@ -41,8 +41,10 @@
   color: $color-text-light;
 }
 
-.contacts__flex-container {
+.contacts__flex-nav {
   display: flex;
+
+  margin-top: 35px;
   margin-bottom: 38px;
 }
 
@@ -111,4 +113,105 @@
     background-position: 0 0;
     background-image: url("../img/icon-right-arrow.svg");
   }
+}
+
+
+
+@media (min-width: $table-width) {
+  .contacts {
+    position: relative;
+
+    padding-bottom: 85px;
+
+    background-repeat: no-repeat, repeat-x;
+    background-position: 0 0, 0 100%;
+    background-image:
+      url("../img/review@1x.jpg"),
+      url("../img/zigzag-line-desktop.png");
+
+  }
+
+  .contacts__wrapper {
+    @include centerTablet;
+  }
+
+  .contacts__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 85px;
+
+    @include fontParams(43px, 50px, 700);
+  }
+
+  .contacts__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 52px;
+    margin-bottom: 55px;
+
+    @include fontParams(17px, 30px, 400);
+  }
+
+  .contacts__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contacts__author-name {
+    @include fontParams(20px, 24px, 700);
+  }
+
+  .contacts__nickname {
+    display: block;
+
+    @include fontParams(18px, 24px, 400);
+  }
+
+  .contacts__flex-nav {
+    display: flex;
+    width: 165px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contacts__prev {
+    flex-grow: 0;
+
+    width: 50%;
+    height: 30px;
+
+    border: none;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .contacts__next {
+    flex-grow: 0;
+
+    width: 50%;
+    height: 30px;
+
+    border: none;
+
+    &::before {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .contacts__to-send {
+    position: absolute;
+    top: 85px;
+    right: 50px;
+
+    width: 173px;
+  }
+
+
+
 }

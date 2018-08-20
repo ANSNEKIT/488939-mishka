@@ -42,3 +42,16 @@
     background-image: url("../img/icon-twitter.svg");
   }
 }
+
+
+@media (min-width: $table-width) {
+  .social {
+    border: none;
+  }
+
+  .social__list {
+    padding: 0;
+  }
+
+
+}
