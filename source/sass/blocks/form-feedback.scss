@@ -5,3 +5,27 @@
 .form-feedback__wrapper {
   @include centerMob;
 }
+
+.form-feedback__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+
+  @include fontParams(13px, 24px, 400);
+  color: $color-text-light;
+}
+
+
+
+@media (min-width: $table-width) {
+  .form-feedback__wrapper {
+    @include centerTablet;
+  }
+
+  .form-feedback__text {
+    //padding: 72px 0;
+
+    @include fontParams(17px, 30px, 400);
+  }
+
+}

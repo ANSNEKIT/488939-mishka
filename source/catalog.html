@@ -11,37 +11,40 @@
 <body>
 
   <header class="page-header">
-      <!-- <div class="page-header__wrapper"> -->
-    <a href="#" class="page-header__link">
-      <img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип Mishka" class="page-header__image-logo">
-    </a>
-    <nav class="main-nav">
-      <button type="button" class="main-nav__toogle">Открыть меню</button>
-      <div class="main-nav__wrapper">
+    <div class="page-header__container"></div>
+    <div class="page-header__wrapper">
+      <nav class="page-header__nav main-nav">
 
-        <ul class="main-nav__list site-list">
+        <a href="#" class="page-header__link">
+          <img src="img/logo-mobile.svg" width="86" height="36" alt="Логотип Mishka" class="page-header__logo-mob">
+          <img src="img/icon-logo-tablet.png" width="113" height="46" alt="Логотип Mishka" class="page-header__logo-tablet">
+        </a>
+
+        <button type="button" class="main-nav__toogle">Открыть меню</button>
+
+        <ul class="main-nav__list main-nav__list--site site-list">
           <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Каталог товаров</a></li>
           <li class="main-nav__item site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
         </ul>
 
-        <ul class="main-nav__list user-list">
-          <li class="main-nav__item user-list__item">
-            <a href="#" class="user-list__link">
+        <ul class="main-nav__list main-nav__list--user user-list">
+          <li class="main-nav__item user-list__item user-list__item--search">
+            <a href="#" class="user-list__link user-list__link--search">
               <span class="main-nav__icon user-list__icon user-list__icon--search"></span>
               Поиск по сайту
             </a>
           </li>
           <li class="main-nav__item user-list__item">
-            <a href="#" class="user-list__link">
+            <a href="#" class="user-list__link user-list__linlk--basket">
               <span class="main-nav__icon user-list__icon user-list__icon--basket"></span>
               Корзина: пока пуста
             </a>
           </li>
         </ul>
 
-      </div>
-    </nav>
-      <!-- </div> -->
+      </nav>
+      <p class="page-header__slogan">Бесплатная доставка по России</p>
+    </div>
   </header>
 
   <main class="page-main">
@@ -62,7 +65,8 @@
 
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <img class="catalog__image" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка 'Зайчик попрыгайчик'">
+              <img class="catalog__image-mob" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка 'Зайчик попрыгайчик'">
+              <img class="catalog__image-tablet" src="../img/photo-hare-tablet.jpg" width="334" height="334" alt="Игрушка 'Зайчик попрыгайчик'">
             </a>
             <div href="#" class="catalog__description">
               <a href="#" class="catalog__title-link">
@@ -82,7 +86,8 @@
 
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <img class="catalog__image" src="../img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+              <img class="catalog__image-mob" src="../img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+              <img class="catalog__image-tablet" src="../img/photo-bowl-tablet.jpg" width="334" height="334" alt="Корзинка для белья">
             </a>
             <div href="#" class="catalog__description">
               <a href="#" class="catalog__title-link">
@@ -102,7 +107,8 @@
 
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <img class="catalog__image" src="../img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+              <img class="catalog__image-mob" src="../img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+              <img class="catalog__image-tablet" src="../img/photo-toys-tablet.jpg" width="334" height="334" alt="Большая корзинка для игрушек">
             </a>
             <div href="#" class="catalog__description">
               <a href="#" class="catalog__title-link">
@@ -126,28 +132,32 @@
 
     <section class="video">
       <div class="video__wrapper">
-        <header class="video__header">
-          <h2 class="video__title">
+        <div class="video__flex-container">
+
+          <header class="video__header">
             <span class="video__icon"></span>
-              Процесс производства
-          </h2>
-        </header>
+            <h2 class="video__title">
+                Процесс производства
+            </h2>
+          </header>
 
+          <div class="video__container">
+            <!-- Здесь будет вставлено видео -->
+            <img src="../img/video-mobile@1x.jpg" alt="Видео о процессе производства" class="video__image-mob" width="260" height="150">
+            <img src="../img/video-tablet.jpg" alt="Видео о процессе производства" class="video__image-tablet" width="668" height="455">
+            <button type="button" class="video__play">Воспроизвести видео</button>
+          </div>
 
-        <div class="video__container">
-          <!-- Здесь будет вставлено видео -->
-          <img src="../img/video-mobile@1x.jpg" alt="Видео о процессе производства" class="video__image" width="260" height="150">
-          <button type="button" class="video__play">Воспроизвести видео</button>
-        </div>
+          <div class="video__description">
+            <p class="video__text">
+              По просьбам наших любимых фолловеров
+              мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a href="#" class="video__to-send button button--video">
+              Сделать заказ
+            </a>
+          </div>
 
-        <div class="video__description">
-          <p class="video__text">
-            По просьбам наших любимых фолловеров
-            мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a href="#" class="video__to-send button button--video">
-            Сделать заказ
-          </a>
         </div>
       </div>
     </section>
@@ -155,7 +165,9 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-
+      <p class="page-footer__logo">
+        <img src="../img/logo-mobile.svg" alt="Логотип Мишка" class="page-footer__image">
+      </p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -169,12 +181,10 @@
           </li>
         </ul>
       </div>
-
       <div class="page-footer__copyright">
         <b class="page-footer__text">Разработано</b>
         <a href="https://htmlacademy.ru" class=" page-footer__link">HTML Academy</a>
       </div>
-
     </div>
   </footer>
 

@@ -3,11 +3,19 @@
   flex-direction: column;
   justify-content: center;
 
-  background-color: $bg-banner;
+  background-color: $bg-grey;
   min-height: 177px;
 
   &--index {
   justify-content: flex-start;
+
+  height: 357px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-image: url("../img/hero-mobile@1x.jpg");
+
+  background-color: $bg-banner;
   }
 }
 
@@ -18,6 +26,25 @@
 }
 
 @media (min-width: $table-width) {
+  .banner {
+    min-height: 225px;
+
+    background-color: $bg-grey;
+    background-repeat: repeat-x;
+    background-position: 0 101%;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+
+    &--index {
+      height: 746px;
+
+      background-color: $bg-banner;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("../img/hero-desktop.jpg");
+    }
+
+  }
+
   .banner__title {
     @include fontParams(43px, 50px, 700);
   }

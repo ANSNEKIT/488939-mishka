@@ -1,45 +1,60 @@
 .video {
-
-
   margin-bottom: 58px;
 }
 
 .video__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
   @include centerMob;
 }
 
-.video__header {
-  position: relative;
+.video__flex-container {
+  width: 260px;
 
-  width: 258px;
-
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  //align-items: center;
+  //justify-content: center;
 
   border: 1px solid $bd-light;
 }
 
+.video__header {
+  //position: relative;
+
+  display: flex;
+  //justify-content: space-between;
+  align-items: center;
+
+  //width: 258px;
+
+  margin: 0;
+  padding: 28px;
+
+  //border: 1px solid $bd-light;
+}
+
 .video__title {
   margin: 0;
-  padding: 23px;
-  padding-left: 90px;
+  padding: 0;
+  // padding: 23px;
+  //padding-left: 64px;
 
   @include fontParams(17px, 24px, 700);
   color: $black;
 }
 
 .video__icon {
-  position: absolute;
-  top: 20px;
-  left: 30px;
+  // position: absolute;
+  // top: 20px;
+  // left: 30px;
 
   display: block;
   width: 32px;
   height: 32px;
+
+  padding-right: 64px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -48,12 +63,16 @@
 
 .video__container {
   position: relative;
-  width: 260px;
-  height: 150px;
+  //width: 260px;
+  //height: 150px;
 }
 
-.video__image {
+.video__image-mob {
 
+}
+
+.video__image-tablet {
+  display: none;
 }
 
 .video__play {
@@ -79,14 +98,15 @@
 }
 
 .video__description {
-  border: 1px solid $bd-light;
+  padding: 33px;
+  //border: 1px solid $bd-light;
 }
 
 .video__text {
   margin: 0;
   padding: 0;
-  padding-top: 32px;
-  padding-left: 33px;
+  //padding-top: 32px;
+  //padding-left: 33px;
   margin-bottom: 28px;
 
   @include fontParams(13px, 24px, 400);
@@ -94,8 +114,53 @@
 }
 
 .video__to-send {
-  margin: 0 auto;
-  margin-bottom: 32px;
+  //margin: 0 auto;
+  //margin-bottom: 32px;
+}
+
+
+
+
+@media (min-width: $table-width) {
+  .video {
+    margin-bottom: 63px;
+  }
+
+  .video__wrapper {
+    justify-content: flex-start;
+
+    @include centerTablet;
+  }
+
+  .video__flex-container {
+    width: 668px;
+  }
+
+  .video__header {
+    padding: 38px 42px 30px;
+
+    order: 2;
+  }
+
+  .video__container {
+    order: 1;
+  }
+
+  .video__image-mob {
+    display: none;
+  }
+
+  .video__image-tablet {
+    display: block;
+  }
+
+  .video__description {
+    padding: 0 42px 45px;
+    order: 3;
+  }
+
+
+
 }
 
 
