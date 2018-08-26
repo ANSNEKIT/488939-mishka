@@ -51,67 +51,63 @@
 .contacts__prev {
   flex-grow: 1;
 
-  position: relative;
-
   padding: 0;
   margin: 0;
 
   width: 130px;
   height: 50px;
 
-  font-size: 0;
   border: 2px solid $bd-light;
   border-right: none;
   background-color: white;
   box-sizing: border-box;
   cursor: pointer;
+}
 
-  &::before {
-    position: absolute;
-    top: 10px;
-    left: 40px;
+.contacts__nav-icon {
+  polygon {
+    fill: $black;
+  }
+}
 
-    display: block;
-    width: 50px;
-    height: 30px;
+.contacts__prev:hover .contacts__nav-icon,
+.contacts__prev:focus .contacts__nav-icon {
+  polygon {
+    fill: $light-color;
+  }
+}
 
-    content: "";
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url("../img/icon-left-arrow.svg");
+.contacts__prev:active .contacts__nav-icon {
+  polygon {
+    fill: $visited-color;
   }
 }
 
 .contacts__next {
   flex-grow: 1;
 
-  position: relative;
-
   padding: 0;
   margin: 0;
 
   width: 130px;
   height: 50px;
 
-  font-size: 0;
   border: 2px solid $bd-light;
   background-color: white;
   box-sizing: border-box;
   cursor: pointer;
+}
 
-  &::before {
-    position: absolute;
-    top: 10px;
-    right: 40px;
+.contacts__next:hover .contacts__nav-icon,
+.contacts__next:focus .contacts__nav-icon {
+  polygon {
+    fill: $light-color;
+  }
+}
 
-    display: block;
-    width: 50px;
-    height: 30px;
-
-    content: "";
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-image: url("../img/icon-right-arrow.svg");
+.contacts__next:active .contacts__nav-icon {
+  polygon {
+    fill: $visited-color;
   }
 }
 

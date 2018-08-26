@@ -6,9 +6,7 @@
 }
 
 .site-list__item {
-  width: 100%;
-
-  @include fontParams(17px, 24px, 700);
+  //width: 100%;
   border-top: 1px solid $bd-light;
 }
 
@@ -17,8 +15,18 @@
   padding: 27px 30px;
   padding-left: 75px;
 
+  @include fontParams(17px, 24px, 700);
   text-decoration: none;
-  color: #000000;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $light-color;
+  }
+
+  &:active {
+    color: $visited-color;
+  }
 }
 
 @media (min-width: $table-width) {

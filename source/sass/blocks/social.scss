@@ -10,7 +10,6 @@
   margin: 0;
 
   list-style: none;
-  font-size: 0;
 }
 
 .social__item {
@@ -25,21 +24,24 @@
   display: block;
   width: 25px;
   height: 25px;
+}
 
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
-
+.social__icon {
+  path {
+    fill: $black;
   }
+}
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  path {
+    fill: $mail-color;
   }
+}
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+.social__link:active .social__icon {
+  path {
+    fill: $mail-color-visited;
   }
 }
 
