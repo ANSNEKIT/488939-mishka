@@ -18,7 +18,9 @@
   @include fontParams(17px, 24px, 700);
   text-decoration: none;
   color: $black;
+}
 
+.site-list__item a[href] {
   &:hover,
   &:focus {
     color: $light-color;
