@@ -111,6 +111,10 @@
   }
 }
 
+// ========= Завершена верстка мобильной версии =================
+// ==============================================================
+
+
 
 
 @media (min-width: $table-width) {
@@ -124,11 +128,17 @@
     background-image:
       url("../img/review@1x.jpg"),
       url("../img/zigzag-line-desktop.png");
-
   }
 
   .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+
     @include centerTablet;
+  }
+
+  .contacts__item {
+    order: 3;
   }
 
   .contacts__title {
@@ -201,11 +211,9 @@
   }
 
   .contacts__to-send {
-    position: absolute;
-    top: 85px;
-    right: 50px;
-
     width: 173px;
+    margin-left: auto;
+    margin-top: -50px;
   }
 
 
