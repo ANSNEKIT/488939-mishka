@@ -62,6 +62,15 @@
 .form__label {
   @include fontParams(17px, 18px, 700);
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $bg-green-lighten;
+  }
+
+  &:active {
+    color: $visited-color;
+  }
 }
 
 .form__checkbox,
@@ -97,8 +106,8 @@
   left: 0;
 
   display: block;
-  width: 39px;
-  height: 39px;
+  width: 40px;
+  height: 40px;
 
   content: "";
 
@@ -106,6 +115,15 @@
   border-radius: 50%;
 
   box-sizing: border-box;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $bg-green-lighten;
+  }
+
+  &:active::before {
+    border: 2px solid $visited-color;
   }
 }
 
@@ -144,6 +162,15 @@
 
   box-sizing: border-box;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $bg-green-lighten;
+  }
+
+  &:active::before {
+    border: 2px solid $visited-color;
+  }
 }
 
 .form__checkbox:checked + .form__label::after {
@@ -179,29 +206,52 @@
 
   box-sizing: border-box;
 
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $bg-green-lighten;
+  }
+
+  &:active {
+    border-bottom: 2px solid $bg-green-lighten;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &--onlyone {
-
-
     margin-bottom: 0;
   }
 
   &--phone {
     background-repeat: no-repeat;
-    background-position: 97% 50%;
+    background-position: 98% 50%;
     background-image: url("../img/icon-phone.svg");
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-phone-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-phone-hover.svg");
+    }
   }
 
   &--mail {
     background-repeat: no-repeat;
-    background-position: 98% 50%;
+    background-position: 99% 50%;
     background-image: url("../img/icon-mail.svg");
-  }
 
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-mail-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-mail-hover.svg");
+    }
+  }
 }
 
 .form__textfield {
@@ -217,6 +267,15 @@
 
   border: 2px solid $color-text-light;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $bg-green-lighten;
+  }
+
+  &:active {
+    border: 2px solid $bg-green-lighten;
+  }
 }
 
 .form__explant {
@@ -233,6 +292,8 @@
   cursor: pointer;
 }
 
+//================= Конец стилей мобильной версии =====================
+//=====================================================================
 
 
 @media (min-width: $table-width) {
@@ -283,8 +344,24 @@
 
     &--color {
       display: flex;
-      flex-wrap: wrap;
     }
+
+    &--person {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .form__flex-row {
+    display: flex;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__flex-container-item--person .form__label {
+    padding-right: 25px;
   }
 
   .form__element-group {
@@ -336,6 +413,18 @@
 
     width: 36px;
     height: 23px;
+  }
+
+  .form__person {
+    width: auto;
+    flex-grow: 1;
+
+    padding-left: 18px;
+
+    &--onlyone {
+      width: 100%;
+      background-color: $bg-grey;
+    }
   }
 
   .form__textfield {

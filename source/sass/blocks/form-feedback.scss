@@ -1,5 +1,6 @@
 .form-feedback {
   margin-bottom: 55px;
+  margin-top: 70px;
 }
 
 .form-feedback__wrapper {
@@ -23,7 +24,7 @@
   }
 
   .form-feedback__text {
-    //padding: 72px 0;
+    padding: 0;
 
     @include fontParams(17px, 30px, 400);
   }
