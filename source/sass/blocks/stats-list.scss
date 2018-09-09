@@ -3,20 +3,33 @@
 
   @include fontParams(19px, 24px, 700);
   color: #ffffff;
-  width: 100%;
+
   border: none;
   border-collapse: collapse;
+}
+
+.stats-list__wrapper {
+  //@include centerMob;
 }
 
 .stats-list__row {
   display: block;
 
-  @include centerMob;
+  padding: 27px 30px;
+  padding-right: 160px;
 
   background-color: $bg-green-lighten;
 
   &--darken {
     background-color: $bg-green-darken;
+  }
+
+  &:hover,
+  &:focus {
+    padding-top: 22px;
+    padding-bottom: 37px;
+
+    cursor: pointer;
   }
 }
 
@@ -29,28 +42,20 @@
 
   &--interior {
     background-image: url("../img/icon-interior.svg");
-    background-position: 96% 50%;
+    background-position: 89.5% 50%;
   }
 
   &--toys {
     background-image: url("../img/icon-toy.svg");
-    background-position: 98% 50%;
+    background-position: 90.625% 50%;
   }
 }
 
 .stats-list__link {
   display: block;
-  padding: 27px 0;
-  padding-right: 140px;
 
   text-decoration: none;
   color: $white;
-}
-
-.stats-list__row:hover .stats-list__link,
-.stats-list__row:focus .stats-list__link {
-  padding-top: 22px;
-  padding-bottom: 37px;
 }
 
 .stats-list__row:active .stats-list__link {
@@ -60,40 +65,66 @@
 
 @media (min-width: $table-width) {
   .stats-list {
-    display: flex;
+    margin-top: -135px;
+  }
 
-    width: 668px;
-    margin: 0 auto;
-    margin-top: -140px;
+  .stats-list__wrapper {
+    display: flex;
+    @include centerTablet;
   }
 
   .stats-list__row {
     display: flex;
 
     margin: 0;
-    padding: 0;
-
+    padding: 35px;
+    padding-right: 110px;
+    padding-bottom: 50px;
 
     width: 50%;
-  }
 
-  .stats-list__link {
-    padding: 35px;
-    padding-right: 130px;
-    padding-bottom: 50px;
+    &:hover,
+    &:focus {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
   }
 
   .stats-list__icon {
     &--interior {
-      background-position: 255px 50%;
+      background-position: 88% 50%;
     }
     &--toys {
-      background-position: 238px 50%;
+      background-position: 88.82% 50%;
     }
   }
 
+}
+
+
+@media (min-width: $desktop-width) {
+  .stats-list__wrapper {
+    @include centerDesc;
+  }
+
+  .stats-list__row {
+    padding: 35px 37px;
+    padding-right: 175px;
+    padding-bottom: 50px;
+
+  }
+
+  .stats-list__icon {
+    &--interior {
+      background-position: 92% 50%;
+    }
+    &--toys {
+      background-position: 93% 50%;
+    }
+  }
 
 }
+
 
 
 

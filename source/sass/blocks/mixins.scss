@@ -30,6 +30,20 @@
   margin: 0 auto;
 }
 
+@mixin centerDesc() {
+  width: 1050px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+@mixin desctop-right() {
+  width: 875px;
+
+  padding: 0 100px;
+  padding-left: 275px;
+  margin: 0 auto;
+}
+
 @mixin boxShadow() {
   &:hover::before,
   &:focus::before {

@@ -57,6 +57,12 @@
   }
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
+
+
 @media (min-width: $table-width) {
   .about {
     margin-bottom: 60px;
@@ -94,3 +100,29 @@
   }
 
 }
+
+
+
+@media (min-width: $desktop-width) {
+  .about__wrapper {
+    width: 700px;
+    padding: 0 275px;
+    margin: 0 auto;
+  }
+
+  .about__title {
+    margin-top: 70px;
+
+    @include fontParams(53px, 57px, 700);
+  }
+
+  .about__flex-item {
+    width: 350px;
+  }
+
+  .about__text {
+    padding-right: 50px;
+  }
+}
+
+

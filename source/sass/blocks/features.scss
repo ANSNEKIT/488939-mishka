@@ -82,6 +82,10 @@
 
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
 
 
 @media (min-width: $table-width) {
@@ -197,5 +201,11 @@
   .features__price {
     @include fontParams(20px, 24px, 700);
   }
+}
 
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    @include desctop-right;
+  }
 }

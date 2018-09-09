@@ -1,4 +1,5 @@
 .map {
+  margin-top: 35px;
   margin-bottom: 40px;
 }
 
@@ -9,7 +10,7 @@
 .map__title {
   margin: 0;
   padding: 0;
-  margin-top: 35px;
+  // margin-top: 35px;
   margin-bottom: 25px;
 
   @include fontParams(18px, 30px, 700);
@@ -106,10 +107,15 @@
   display: none;
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
 
 
 @media (min-width: $table-width) {
   .map {
+    margin-top: 70px;
     margin-bottom: 58px;
   }
 
@@ -118,14 +124,15 @@
   }
 
   .map__title {
-    margin-top: 70px;
+    margin: 0;
+    //margin-top: 70px;
     margin-bottom: 35px;
 
     @include fontParams(43px, 50px, 700);
   }
 
-  .map__table {
-    flex-direction: row;
+  .map__flex-content {
+    display: flex;
   }
 
   .map__flex-row {
@@ -151,7 +158,41 @@
     margin: 0 auto;
   }
 
+}
 
+// ========================================
+// ========================================
+
+
+@media (min-width: $desktop-width) {
+  .map {
+    //margin-top: 70px;
+    margin-bottom: 105px;
+  }
+
+  .map__wrapper {
+    @include desctop-right;
+  }
+
+  .map__table {
+    width: 350px;
+  }
+
+  .map__flex-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map__flex-row {
+    width: auto;
+  }
+
+  .map__title {
+    // margin-top: 80px;
+    margin-bottom: 50px;
+
+    @include fontParams(53px, 57px, 700);
+  }
 }
 
 

@@ -60,6 +60,10 @@
   display: block;
 }
 
+.main-nav--no-js .site-list__item--desctop {
+  display: none;
+}
+
 .main-nav--no-js .user-list__item {
   display: block;
 }
@@ -79,8 +83,6 @@
   &:active {
     opacity: 0.3;
   }
-  //width: 120px;
-  //margin-right: auto;
 }
 
 .main-nav__logo-mobile {
@@ -91,6 +93,9 @@
   display: none;
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
 
 
 
@@ -153,3 +158,36 @@
   // }
 
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .main-nav__link {
+    // width: 120px;
+    margin: 0;
+
+    order: 2;
+  }
+
+  .main-nav--no-js .site-list__item--desctop {
+    display: block;
+  }
+
+  .main-nav__list--site {
+    width: 415px;
+
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .main-nav__list--user {
+    width: 350px;
+
+    order: 3;
+  }
+}
+

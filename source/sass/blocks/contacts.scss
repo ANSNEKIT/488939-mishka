@@ -1,4 +1,6 @@
 .contacts {
+  position: relative;
+
   padding-bottom: 45px;
 
   background-repeat: repeat-x;
@@ -19,7 +21,7 @@
 .contacts__item {
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
+  //margin-bottom: 33px;
 
   color: $color-text-light;
 }
@@ -111,8 +113,9 @@
   }
 }
 
-// ========= Завершена верстка мобильной версии =================
-// ==============================================================
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
 
 
 
@@ -123,11 +126,27 @@
 
     padding-bottom: 85px;
 
-    background-repeat: no-repeat, repeat-x;
-    background-position: 0 0, 0 100%;
-    background-image:
-      url("../img/review@1x.jpg"),
-      url("../img/zigzag-line-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/review@1x.jpg");
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      content: "";
+
+      //width: 1150px;
+      height: 20px;
+
+      margin: 0 auto;
+
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      background-image: url("../img/zigzag-line-desktop.png");;
+    }
   }
 
   .contacts__wrapper {
@@ -216,6 +235,56 @@
     margin-top: -50px;
   }
 
+}
 
 
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    padding-bottom: 90px;
+
+    background-image: none;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      content: "";
+
+      width: 1150px;
+      height: 20px;
+
+      margin: 0 auto;
+
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      background-image: url("../img/zigzag-line-desktop.png");;
+    }
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 875px;
+
+    padding: 0 50px;
+    padding-left: 225px;
+    margin: 0 auto;
+
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/review@1x.jpg");
+  }
+
+  .contacts__title {
+    @include fontParams(53px, 57px, 700);
+  }
+
+  .contacts__text {
+    margin-bottom: 40px;
+  }
 }
