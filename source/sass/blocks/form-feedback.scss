@@ -1,5 +1,5 @@
 .form-feedback {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   margin-top: 70px;
 }
 
@@ -16,6 +16,10 @@
   color: $color-text-light;
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
 
 
 @media (min-width: $table-width) {
@@ -27,6 +31,21 @@
     padding: 0;
 
     @include fontParams(17px, 30px, 400);
+  }
+
+}
+
+// ==========================================
+// ==========================================
+
+
+@media (min-width: $desktop-width) {
+  .form-feedback {
+    margin-top: 130px;
+  }
+
+  .form-feedback__wrapper {
+    width: 700px;
   }
 
 }

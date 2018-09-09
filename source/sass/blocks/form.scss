@@ -292,8 +292,10 @@
   cursor: pointer;
 }
 
-//================= Конец стилей мобильной версии =====================
-//=====================================================================
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
 
 
 @media (min-width: $table-width) {
@@ -305,12 +307,18 @@
       background-color: $bg-grey;
     }
 
+    &--phone {
+      padding-bottom: 25px;
+    }
+
     &--mail {
       background-color: $bg-grey;
+
+      padding-top: 0;
     }
 
     &--textarea {
-      padding-bottom: 53px;
+      padding-bottom: 50px;
     }
 
     &::before {
@@ -344,6 +352,7 @@
 
     &--color {
       display: flex;
+      flex-wrap: wrap;
     }
 
     &--person {
@@ -358,10 +367,30 @@
 
     padding: 0;
     margin: 0;
+    margin-bottom: 26px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form__flex-container-item--person .form__label {
     padding-right: 25px;
+  }
+
+  .form__flex-container-item--color .form__label {
+    padding-right: 20px;
+    margin-bottom: 23px;
+
+    box-sizing: border-box;
+
+    &:nth-of-type(odd) {
+      width: 262px;
+    }
+
+    &:nth-of-type(n+5) {
+      margin-bottom: 0;
+    }
   }
 
   .form__element-group {
@@ -447,6 +476,45 @@
     width: 230px;
   }
 
+}
+
+// =======================================
+// =======================================
+
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    @include centerDesc;
+
+    &--down {
+      width: 700px;
+
+      padding: 0 175px;
+      margin: 0 auto;
+    }
+  }
+
+  .form__flex-container-legend {
+    width: 175px;
+  }
+
+  .form__flex-container-item {
+    width: 875px;
+  }
+
+  .form__flex-container-item--color .form__label {
+    padding-right: 20px;
+
+    box-sizing: border-box;
+
+    &:not(:nth-of-type(3n)) {
+      width: 262px;
+    }
+
+    &:nth-of-type(n+4) {
+      margin-bottom: 0;
+    }
+  }
 
 }
 
