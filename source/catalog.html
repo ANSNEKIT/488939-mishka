@@ -11,9 +11,10 @@
 <body>
 
   <header class="page-header">
+    <div class="page-header__container"></div>
     <div class="page-header__wrapper">
-      <nav class="page-header__nav main-nav main-nav--opened">
-        <a href="index.html" class="main-nav__link">
+      <nav class="page-header__nav main-nav main-nav--opened main-nav--no-js">
+        <a href="#" class="main-nav__link">
           <img src="../img/logo-mobile.svg" width="86" height="36" alt="Логотип Mishka" class="main-nav__logo-mobile">
           <img src="../img/icon-logo-tablet.png" width="113" height="46" alt="Логотип Mishka" class="main-nav__logo-tablet">
         </a>
@@ -24,16 +25,23 @@
 
         <ul class="main-nav__list main-nav__list--site site-list">
           <li class="main-nav__item site-list__item">
-            <a class="site-list__link">Каталог товаров</a>
+            <a href="catalog.html" class="site-list__link">Каталог товаров</a>
           </li>
           <li class="main-nav__item site-list__item">
             <a href="#" class="site-list__link">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item site-list__item site-list__item--desctop">
+            <a href="catalog.html" class="site-list__link">Новые поступления</a>
+          </li>
+          <li class="main-nav__item site-list__item site-list__item--desctop">
+            <a href="catalog.html" class="site-list__link">Распродажа</a>
           </li>
         </ul>
 
         <ul class="main-nav__list main-nav__list--user user-list">
           <li class="main-nav__item user-list__item user-list__item--search">
             <a href="#" class="user-list__link user-list__link--search">
+              <!-- <span class="main-nav__icon user-list__icon user-list__icon--search"></span> -->
               <svg class="user-list__icon user-list__icon--search" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
                 <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
               </svg>
@@ -62,8 +70,8 @@
 
     <section class="catalog">
       <header class="catalog__header banner">
-        <div class="catalog__wrapper">
-          <h2 class="catalog__title banner__title">
+        <div class="banner__wrapper">
+          <h2 class="banner__title">
             Каталог товаров
           </h2>
         </div>
@@ -74,8 +82,8 @@
 
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <img class="catalog__image-mob" src="../img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Игрушка 'Зайчик попрыгайчик'">
-              <img class="catalog__image-tablet" src="../img/photo-hare-tablet.jpg" width="334" height="334" alt="Игрушка 'Зайчик попрыгайчик'">
+              <img class="catalog__image-mob" src="../img/photo-hare-mobile@1x.jpg" alt="Игрушка 'Зайчик попрыгайчик'">
+              <img class="catalog__image-tablet" src="../img/photo-hare-tablet.jpg" alt="Игрушка 'Зайчик попрыгайчик'">
             </a>
             <div class="catalog__description">
               <div class="catalog__title-block">
@@ -168,7 +176,7 @@
 
           <div class="video__description">
             <header class="video__header video__header--bottom">
-              <span class="video__icon"></span>
+              <!-- <span class="video__icon"></span> -->
               <h2 class="video__title">
                 Процесс производства
               </h2>

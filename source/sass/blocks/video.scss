@@ -113,6 +113,9 @@
 
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
 
 
 
@@ -154,9 +157,6 @@
     @include fontParams(20px, 24px, 700);
   }
 
-  .video__container {
-  }
-
   .video__image-mob {
     display: none;
   }
@@ -170,9 +170,40 @@
   }
 
   .video__text {
+    margin-bottom: 35px;
+
     @include fontParams(15px, 30px, 400);
   }
 
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    justify-content: flex-start;
+    flex-direction: row;
+    @include centerDesc;
+  }
+
+  .video__container {
+    width: 683px;
+  }
+
+  .video__description {
+    width: 350px;
+    flex-grow: 1;
+
+    padding: 60px;
+    padding-top: 40px;
+  }
+
+  .video__title {
+    padding: 0;
+    padding-top: 55px;
+  }
+
+  .video__text {
+    margin-bottom: 50px;
+  }
 }
 
 

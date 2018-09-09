@@ -48,10 +48,6 @@
   text-decoration: none;
 }
 
-.catalog__image-mob {
-
-}
-
 .catalog__image-tablet {
   display: none;
 }
@@ -68,10 +64,6 @@
   box-sizing: border-box;
 
   @include boxShadow;
-}
-
-.catalog__title-block {
-
 }
 
 .catalog__title-link {
@@ -104,10 +96,6 @@
 
   @include fontParams(13px, 30px, 400);
   color: $color-text-light;
-}
-
-.catalog__price-link {
-
 }
 
 .catalog__price-text {
@@ -164,6 +152,11 @@
   }
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
+
 
 
 @media (min-width: $table-width) {
@@ -173,6 +166,10 @@
 
   .catalog__wrapper {
     @include centerTablet;
+  }
+
+  .catalog__header {
+    margin-bottom: 70px;
   }
 
   .catalog__item {
@@ -206,15 +203,6 @@
     height: 333px;
 
     box-sizing: border-box;
-
-  }
-
-  .catalog__title-block {
-    //margin-bottom: auto;
-  }
-
-  .catalog__title-link {
-
   }
 
   .catalog__title {
@@ -234,7 +222,7 @@
 
   .catalog__flex-container {
     //margin-top: auto;
-    padding: 28px 0;
+    padding: 25px 0;
 
     &::before {
       top: 0;
@@ -243,5 +231,52 @@
     }
   }
 
+}
+
+// ===========================================
+// ===========================================
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    @include centerDesc;
+  }
+
+  .catalog__header {
+    margin-bottom: 120px;
+  }
+
+  .catalog__list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 57px;
+  }
+
+  .catalog__item {
+    width: 318px;
+    height: 660px;
+    flex-direction: column;
+
+    margin-bottom: 55px;
+  }
+
+  .catalog__description {
+    justify-content: space-between;
+    flex-grow: 1;
+
+    width: 318px;
+    height: auto;
+
+    box-sizing: border-box;
+  }
+
+  .catalog__title-block {
+    //margin-bottom: auto;
+  }
+
+  .catalog__flex-container {
+    margin-top: auto;
+  }
 
 }

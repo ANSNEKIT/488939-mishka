@@ -25,6 +25,13 @@
   text-align: center;
 }
 
+// ========================================
+// Конец стилей мобильной версии
+// ========================================
+
+
+
+
 @media (min-width: $table-width) {
   .banner {
     min-height: 225px;
@@ -42,11 +49,23 @@
       background-position: 50% 0;
       background-image: url("../img/hero-desktop.jpg");
     }
-
   }
 
   .banner__title {
     @include fontParams(43px, 50px, 700);
   }
 
+}
+
+// =======================================================
+// =======================================================
+
+
+@media (min-width: $desktop-width) {
+  .banner {
+    min-height: 255px;
+  }
+  .banner__title {
+    @include fontParams(53px, 57px, 700);
+  }
 }
