@@ -7,15 +7,19 @@
   min-height: 177px;
 
   &--index {
-  justify-content: flex-start;
+    justify-content: flex-start;
 
-  height: 357px;
+    height: 357px;
 
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-color: $bg-banner;
 
-  background-color: $bg-banner;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 }
 
@@ -36,18 +40,18 @@
   .banner {
     min-height: 225px;
 
-    background-color: $bg-grey;
-    background-repeat: repeat-x;
-    background-position: 0 101%;
-    background-image: url("../img/zigzag-fill-desktop.svg");
-
     &--index {
       height: 746px;
 
       background-color: $bg-banner;
       background-repeat: no-repeat;
       background-position: 50% 0;
-      background-image: url("../img/hero-desktop.jpg");
+      background-image: url("../img/hero-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 2300px auto;
+      }
     }
   }
 
@@ -64,7 +68,20 @@
 @media (min-width: $desktop-width) {
   .banner {
     min-height: 255px;
+
+    &--index {
+      background-color: $bg-banner;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
   }
+
   .banner__title {
     @include fontParams(53px, 57px, 700);
   }

@@ -57,9 +57,7 @@
 }
 
 .features__image {
-  &--tablet {
-    display: none;
-  }
+
 }
 
 .features__flex-item-price {
@@ -96,7 +94,10 @@
     padding-bottom: 70px;
     margin-top: 0;
 
-    background-image: url("../img/zigzag-line-desktop.png");
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    background-size: 1150px auto;
 
     &::after {
       position: absolute;
@@ -111,7 +112,7 @@
 
       background-repeat: repeat-x;
       background-position: 50% 0;
-      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
 
@@ -168,13 +169,7 @@
   }
 
   .features__image {
-    &--mob {
-      display: none;
-    }
 
-    &--tablet {
-      display: block;
-    }
   }
 
   .features__text {

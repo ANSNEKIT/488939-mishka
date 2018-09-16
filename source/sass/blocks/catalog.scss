@@ -48,9 +48,6 @@
   text-decoration: none;
 }
 
-.catalog__image-tablet {
-  display: none;
-}
 
 .catalog__description {
   position: relative;
@@ -183,15 +180,7 @@
   }
 
   .catalog__link {
-    height: auto;
-  }
-
-  .catalog__image-mob {
-    display: none;
-  }
-
-  .catalog__image-tablet {
-    display: block;
+    height: 333px;
   }
 
   .catalog__description {
@@ -216,6 +205,7 @@
     //padding: 5px 28px 0;
     padding: 0;
     padding-top: 8px;
+    padding-bottom: 17px;
 
     @include fontParams(15px, 30px, 400);
   }
@@ -277,6 +267,10 @@
 
   .catalog__flex-container {
     margin-top: auto;
+  }
+
+  .catalog__link {
+    height: 462px;
   }
 
 }

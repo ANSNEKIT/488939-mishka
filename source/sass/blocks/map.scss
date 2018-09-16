@@ -99,13 +99,10 @@
   justify-content: center;
 }
 
-.map__image-mob {
+.map__image {
   margin-bottom: 40px;
 }
 
-.map__image-tablet {
-  display: none;
-}
 
 // ========================================
 // Конец стилей мобильной версии
@@ -143,13 +140,7 @@
     margin-right: 50px;
   }
 
-  .map__image-mob {
-    display: none;
-  }
-
-  .map__image-tablet {
-    display: block;
-
+  .map__image {
     margin-bottom: 56px;
   }
 
