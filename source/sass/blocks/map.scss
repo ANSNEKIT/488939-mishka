@@ -94,9 +94,9 @@
   }
 }
 
-.map__image-wrapper {
-  display: flex;
-  justify-content: center;
+.map__image-block {
+  // display: flex;
+  // justify-content: center;
 }
 
 .map__image {
@@ -121,17 +121,34 @@
   }
 
   .map__title {
+    position: relative;
+
     margin: 0;
     //margin-top: 70px;
     margin-bottom: 35px;
 
     @include fontParams(43px, 50px, 700);
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      right: 0;
+
+      width: 47px;
+      height: 82px;
+
+      content: "";
+
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   .map__flex-content {
     display: flex;
   }
-
+  .map__flex {
+    display: flex;
+  }
   .map__flex-row {
     width: 334px;
   }
@@ -157,25 +174,40 @@
 
 @media (min-width: $desktop-width) {
   .map {
-    //margin-top: 70px;
+    // display: flex;
+    // flex-wrap: wrap;
+    margin-top: 70px;
     margin-bottom: 105px;
   }
 
   .map__wrapper {
-    @include desctop-right;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include centerDesc;
   }
 
   .map__table {
-    width: 350px;
-  }
-
-  .map__flex-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 28%;
+    margin-right: 5%;
+    margin-top: 70px;
+    margin-left: 16.5%;
   }
 
-  .map__flex-row {
-    width: auto;
+  .map__flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map__image-block {
+    width: 525px;
+    height: 457px;
   }
 
   .map__title {
@@ -183,6 +215,19 @@
     margin-bottom: 50px;
 
     @include fontParams(53px, 57px, 700);
+
+    &::before {
+      top: -20px;
+      left: -110px;
+    }
+  }
+
+  .map__to-send {
+    position: absolute;
+    left: 19.5%;
+    bottom: 0;
+
+    margin: 0;
   }
 }
 
