@@ -27,22 +27,16 @@
 }
 
 .social__icon {
-  path {
     fill: $black;
-  }
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-  path {
     fill: $mail-color;
-  }
 }
 
 .social__link:active .social__icon {
-  path {
     fill: $mail-color-visited;
-  }
 }
 
 

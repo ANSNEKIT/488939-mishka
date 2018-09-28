@@ -46,17 +46,17 @@
   height: 20px;
 }
 
+.user-list__link .user-list__icon {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
 .user-list__link:hover .user-list__icon,
 .user-list__link:focus .user-list__icon {
-  path {
     fill: $green-color;
-  }
 }
 
 .user-list__link:active .user-list__icon {
-  path {
     fill: $svg-active;
-  }
 }
 
 // ========================================

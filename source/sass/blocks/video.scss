@@ -39,7 +39,6 @@
 
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url("../img/icon-video.svg");
   }
 }
 
@@ -57,32 +56,37 @@
   display: flex;
 }
 
-.video__image-mob {
-
-}
-
-.video__image-tablet {
-  display: none;
-}
-
 .video__play {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  width: 101px;
-  height: 77px;
+  width: 102px;
+  height: 78px;
 
-  margin-left: -50px;
-  margin-top: -38px;
+  margin-left: -51px;
+  margin-top: -39px;
+  padding: 0;
 
   border: none;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url("../img/icon-play.svg");
 
   cursor: pointer;
+}
+
+
+.video__play-icon {
+  &:hover {
+    width: 120%;
+    height: 120%;
+  }
+
+  &:active {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .video__description {

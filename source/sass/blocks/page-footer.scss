@@ -11,22 +11,16 @@
 }
 
 .page-footer__icon-logo {
-  g {
     fill: $black;
-  }
 }
 
 .page-footer__logo:hover .page-footer__icon-logo,
 .page-footer__logo:focus .page-footer__icon-logo {
-  g {
     fill: $mail-color;
-  }
 }
 
 .page-footer__logo:active .page-footer__icon-logo {
-  g {
     fill: $mail-color-visited;
-  }
 }
 
 .page-footer__copyright {
@@ -49,30 +43,19 @@
 
   width: 27px;
   height: 35px;
-
-  // font-size: 0;
-  // background-repeat: no-repeat;
-  // background-position: 0 0;
-  // background-image: url("../img/logo-htmlacademy.svg");
 }
 
 .page-footer__icon-academy {
-  path {
     fill: $black;
-  }
 }
 
 .page-footer__link:hover .page-footer__icon-academy,
 .page-footer__link:focus .page-footer__icon-academy {
-  path {
     fill: $mail-color;
-  }
 }
 
 .page-footer__link:active .page-footer__icon-academy {
-  path {
     fill: $mail-color-visited;
-  }
 }
 
 // ========================================

@@ -107,20 +107,14 @@
   width: 21px;
   height: 19px;
 
-  path {
-    fill: $color-text-light;
-  }
+  fill: $color-text-light;
 
   &:hover,
   &:focus {
-    path {
-      fill: $green-color;
-    }
+    fill: $green-color;
   }
   &:active {
-    path {
-      fill: $svg-active;
-    }
+    fill: $svg-active;
   }
 }
 
