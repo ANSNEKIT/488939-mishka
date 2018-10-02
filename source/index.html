@@ -6,8 +6,9 @@
 
   <title>HTML Academy: Мишка</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/normalize.css">
+
 </head>
 <body>
 
@@ -130,6 +131,10 @@
 
           <a href="#" class="features__link">
             <picture>
+              <source type="image/webp" media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
               <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Пряжа" class="features__image">
@@ -253,9 +258,13 @@
 
         <div class="map__image-block">
           <picture>
+            <source type="image/webp" media="(min-width: 1250px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
             <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img src="../img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наши координаты на карте" class="map__image">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Наши координаты на карте" class="map__image">
           </picture>
         </div>
 
