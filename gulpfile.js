@@ -14,6 +14,7 @@ var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("gulp-sequence");
 var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 
 
 gulp.task("style", function() {
@@ -69,6 +70,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
@@ -77,7 +79,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/**",
+    "source/css/normalize.css"
     ], {
     base: "source"
     })
